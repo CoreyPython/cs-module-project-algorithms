@@ -3,9 +3,20 @@ Input: a List of integers where every int except one shows up twice
 Returns: an integer
 '''
 def single_number(arr):
-    # Your code here
+    # Understand
+    ## Every number but one in the array shows up twice.
+    ## We need to find out what number is the single occurence.
 
-    pass
+    # Plan
+    ## We can use a set to get the duplicates and maybe compare the original array with the set?
+
+
+    # Execute
+    return 2 * sum(set(arr)) - sum(arr)
+
+
+
+    # Reflect
 
 
 if __name__ == '__main__':
