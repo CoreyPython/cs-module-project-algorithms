@@ -12,7 +12,12 @@ def single_number(arr):
 
 
     # Execute
-    return 2 * sum(set(arr)) - sum(arr)
+    # print(set(arr))
+    # print(3 * sum(set(arr)))
+    # print(sum(arr))
+    # print(3 * sum(set(arr)) - sum(arr))
+
+    return 2 * sum(set(arr)) - sum(arr) # O(n)? Not sure what Sum is doing under the hood.
 
 
 
@@ -22,5 +27,5 @@ def single_number(arr):
 if __name__ == '__main__':
     # Use the main function to test your implementation
     arr = [1, 1, 4, 4, 5, 5, 3, 3, 9, 0, 0]
-
+    # arr = [1, 1, 1, 4, 4, 4, 5, 5, 5, 3, 3, 3, 9, 0, 0, 0]
     print(f"The odd-number-out is {single_number(arr)}")

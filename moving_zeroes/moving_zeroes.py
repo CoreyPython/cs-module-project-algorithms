@@ -4,13 +4,13 @@ Returns: a List of integers
 '''
 def moving_zeroes(arr):
     pos = 0
-    for i in range(len(arr)):
-        element = arr[i]
-        if element != 0:
+    for i in range(len(arr)): # O(n)
+        element = arr[i] # O(n)
+        if element != 0: # O(n)
             arr[pos], arr[i] = arr[i], arr[pos]
             pos += 1
-            
-    return arr
+
+    return arr # Overall O(n)
 
 if __name__ == '__main__':
     # Use the main function here to test out your implementation
